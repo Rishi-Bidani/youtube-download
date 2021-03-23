@@ -21,4 +21,3 @@ from youtube
 #
 ###### Notice: 
 - Currently the playlist uses default download settings
-- 
