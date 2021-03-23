@@ -21,3 +21,7 @@ from youtube
 #
 ###### Notice: 
 - Currently the playlist uses default download settings
+
+
+#### Download exe From Github releases
+![image](https://user-images.githubusercontent.com/64310471/112081197-45b29f00-8ba9-11eb-9e1f-534b961805af.png)
