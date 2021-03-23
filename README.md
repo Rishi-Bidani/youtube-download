@@ -1,6 +1,6 @@
 # YOUTBE DOWNLOADER
 
-This is a simple python program to download videos from youtube\s\s  
+This is a simple python program to download videos from youtube
 
 
 
