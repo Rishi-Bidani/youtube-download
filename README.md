@@ -3,7 +3,6 @@
 This is a simple python program to download videos from youtube
 
 </br>
-<marquee> hi </marquee>
 
 ## Dependencies for setup
 - colorama
