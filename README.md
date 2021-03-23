@@ -1,6 +1,6 @@
 # YOUTBE DOWNLOADER
 
-This is a simple python program to download videos from youtube
+This is a simple python program to download videos from youtube  
 
 
 
@@ -18,7 +18,7 @@ This is a simple python program to download videos from youtube
 - download playlist audio
 - download entire videos from playlist
 
-#
+
 ###### Notice: 
 - Currently the playlist uses default download settings
 
