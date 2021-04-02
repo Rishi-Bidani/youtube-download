@@ -26,4 +26,5 @@ This is a simple python program to download videos from youtube
 </br>
 
 #### Download exe From Github releases
-![image](https://user-images.githubusercontent.com/64310471/112081197-45b29f00-8ba9-11eb-9e1f-534b961805af.png)
+![image](https://user-images.githubusercontent.com/64310471/113414802-7382b980-93db-11eb-9b03-b6b33140e877.png)
+
