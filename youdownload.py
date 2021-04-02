@@ -1,7 +1,7 @@
 from pytube import YouTube, Playlist
 from tablemaker import TableMaker
-from colorama import Fore
-
+from colorama import Fore, Style, init
+init(convert=True)
 
 class YouDownPlay:
     def __init__(self, link):
@@ -41,11 +41,11 @@ class YouDownVideo:
             self.options.append(i)
         print(*self.options, sep="\n", end="\n")
 
-    def downloadAudioItag(self, itag):
-        self.ytObject.streams.get_by_itag(itag=itag).download()
+    def downloadAudioItag(self, itag, location):
+        self.ytObject.streams.get_by_itag(itag=itag).download(f"{location}")
 
-    def downloadVideoItag(self, itag):
-        self.ytObject.streams.get_by_itag(itag=itag).download()
+    def downloadVideoItag(self, itag, location):
+        self.ytObject.streams.get_by_itag(itag=itag).download(f"{location}")
 
 
 print("Choose desired option: ")
@@ -60,6 +60,7 @@ optionsTable.items(row1)
 optionsTable.items(row2)
 optionsTable.items(row3)
 optionsTable.items(row4)
+optionsTable.bottomline()
 
 chosevp = input("Your choice: ")
 if chosevp == "v" or chosevp == "av":
@@ -70,14 +71,17 @@ if chosevp == "v" or chosevp == "av":
     if chosevp == "av":
         yd.listAudioOptions()
         inpItag = input("enter itag: ")
-        yd.downloadAudioItag(inpItag)
+        location = input("Press Enter for current directory: \n")
+        yd.downloadAudioItag(inpItag, location)
 
     elif chosevp == "v":
         yd.listVideoOptions()
         inpItag = input("enter itag: ")
-        yd.downloadAudioItag(inpItag)
+        location = input("Press Enter for current directory: \n")
+        yd.downloadAudioItag(inpItag, location)
 else:
-    print("CAUTION ENTER PUBLIC PLAYLIST LINK!!!!")
+    print(Fore.RED + "CAUTION ENTER PUBLIC PLAYLIST LINK!!!!")
+    print(Style.RESET_ALL)
     playLink = input("Enter your playlist link: \n")
     ydp = YouDownPlay(playLink)
     ydp.createytpObject()
@@ -87,7 +91,7 @@ else:
         ydp.downloadFullPlayAudio(location)
 
     elif chosevp == "p":
-        print("Enter download location \n")
+        print("Enter download location")
         location = input("Press Enter for current directory: \n")
         ydp.downloadFullPlayvideo(location)
     else:
