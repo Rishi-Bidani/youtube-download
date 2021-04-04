@@ -26,7 +26,8 @@ This is a simple python program to download videos from youtube
 </br>
 
 CAUTION: 
-If your antivirus is interfering with the download, add this to your list of files to ignore while scanning.
+If your antivirus is interfering with the download (with v1 (tag2) ), add this to your list of files to ignore while scanning.
+Else use version = v1.0 (tag 1), The only difference is that this will download multiple dll dependencies as well. DO NOT DELETE THOSE FILES
 
 <br />
 #### Download exe From Github releases
