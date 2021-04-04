@@ -31,5 +31,6 @@ Else use version = v1.0 (tag 1), The only difference is that this will download 
 
 <br />
 #### Download exe From Github releases
+
 ![image](https://user-images.githubusercontent.com/64310471/113414802-7382b980-93db-11eb-9b03-b6b33140e877.png)
 
